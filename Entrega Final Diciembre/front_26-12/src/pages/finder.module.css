@@ -1,0 +1,58 @@
+.cardsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cardsContent {
+  padding: 1rem 2rem;
+  max-width: 40rem;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 1rem;
+}
+.headerContainer {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+  padding: 0.5rem 0;
+  color: white;
+}
+.headerContainer div:nth-child(1) {
+}
+.headerContainer div:nth-child(2) {
+}
+.paginatorContainer {
+  color: rgba(255, 255, 255, 0.9);
+}
+.paginatorContainer span {
+  padding: 0 0.8rem;
+}
+.finderContainer {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+.inputSearch {
+  font-size: 1.3rem;
+}
+
+.historyContainer {
+  position: absolute;
+  top: 100%; /* Posición debajo del cuadro de búsqueda */
+  left: 0;
+  background-color: #333; /* Fondo oscuro para resaltar el texto blanco */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%; /* Ancho completo del contenedor principal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Asegura que el historial esté por encima del contenido principal */
+}
+
+.noBulletList {
+  list-style: none;
+  padding: 0; /* Puedes ajustar el relleno según tus preferencias */
+  margin: 0; /* Ajusta el margen según tus preferencias */
+}

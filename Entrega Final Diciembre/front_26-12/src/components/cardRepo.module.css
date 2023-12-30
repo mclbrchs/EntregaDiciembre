@@ -1,0 +1,71 @@
+.CardContainer {
+  background-color: #1e1e20;
+  padding: 1rem;
+  min-height: 6rem;
+  border-radius: 0.5rem;
+}
+.CardContent {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100%;
+}
+.CardProfilePic img {
+  width: 3rem;
+  height: 3rem;
+}
+.CardProfilePic {
+  display: flex;
+  align-items: start;
+}
+.CardDesc {
+  display: grid;
+  grid-template-rows: 1fr 1fr auto;
+  text-align: left;
+  padding: 0 0.5rem;
+  grid-gap: 0.2rem;
+}
+
+.CardDescHeader span:nth-child(1) {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.CardDescHeader span:nth-child(2) {
+  font-size: 0.8rem !important;
+  color: rgba(255, 255, 255.1) !important;
+}
+
+.CardDescHeader,
+.CardDescDesc,
+.CardDescFooter {
+  text-align: left;
+  padding: 0 0.5rem;
+  color: white;
+}
+
+.CardDescHeader span:nth-child(2),
+.CardDescDesc,
+.CardDescFooter {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.CardDescDesc {
+  font-size: 0.8rem;
+}
+
+.CardDescFooter,
+.CardDescHeader {
+  font-size: 0.8rem;
+  display: grid;
+  grid-gap: 1.2rem;
+  grid-auto-flow: column;
+  justify-content: left;
+}
+
+.CardDescHeader {
+  grid-gap: 0.4rem;
+}
+
+@media only screen and (max-device-width: 720px) {
+  /* insert styles here */
+}
